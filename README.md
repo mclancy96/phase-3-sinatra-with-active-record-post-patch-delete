@@ -29,8 +29,8 @@ We'll continue working on the game review application from the previous lessons.
 To get set up, run:
 
 ```console
-$ bundle install
-$ bundle exec rake db:migrate db:seed
+bundle install
+bin/rake db:migrate db:seed
 ```
 
 As a reminder, here's what the relationships will look like in our ERD:
@@ -40,7 +40,7 @@ As a reminder, here's what the relationships will look like in our ERD:
 Then, run the server with our new Rake task:
 
 ```console
-$ bundle exec rake server
+bin/rake server
 ```
 
 With that set up, let's start working on some CRUD!
@@ -134,7 +134,7 @@ the record from the database:
 DELETE FROM "reviews" WHERE "reviews"."id" = 1
 ```
 
-**NOTE:** You can seed the database again by running `rake db:seed` if you
+**NOTE:** You can seed the database again by running bin/rake db:seed` if you
 wish to play around with the initial data.
 
 ## Handling POST Requests
